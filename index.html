@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-card">
+            <div class="music-card_header">
+                <span class="music-header_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="music-header__title">Now playing: </span>
+                <span class="music-header__favourite">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+            </div>
+            <audio class="audio" src=""></audio>
+            <div class="cd">
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="song">
+                <h3 class="song__name">Little do you know</h3>
+                <p class="song__author">Alex & Sierra</p>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-bar__value"></div>
+            </div>
+            <div class="progress-time">
+                <span class="progress-time__current">00:00</span>
+                <span class="progress-time_duration">04:00</span>
+            </div>
+            <div class="control">
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+                <div class="btn btn-previous"><i class="fa-solid fa-backward-step"></i></div>
+                <div class="btn btn-playing">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-sharp fa-solid fa-circle-pause"></i>
+                </div>
+                <div class="btn btn-next"><i class="fa-solid fa-forward-step"></i></div>
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+            </div>
+            <div class="volumn"></div>
+        </div>
+    </div>
+    <div class="modal_playlist">
+        <div class="playlist-container">
+            <div class="playlist-header">
+                <h3>My playlist</h3>
+                <span class="close-list">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </div>
+            <div class="playlist-list">
+
+                <div class="playlist__item">
+                    <div class="playlist__item-img">
+                        <img src="./Suzy4.jpg" alt="">
+                    </div>
+                    <div class="playlist__item-info">
+                        <h3 class="playlist__item-name">Little do you know</h3>
+                        <p class="playlist__item-author">Little do you know</p>
+                    </div>
+                    <div class="playlist__item-wave">
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                    </div>
+                    <div class="playlist__item-option">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
